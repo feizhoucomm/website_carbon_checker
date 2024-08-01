@@ -1,0 +1,51 @@
+*::selection {
+  color: white;
+  background-color: #3e9b4a;
+}
+.hero-section::selection {
+  color: white;
+  background-color: #5656a6;
+}
+.card-parent:hover .card-container {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+.card-container {
+  -webkit-transition: 0.8s ease-out;
+  transition: 0.8s ease-out;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  perspective: 1000px;
+  padding: 4px;
+}
+.front {
+  z-index: 2;
+  transform-style: preserve-3d;
+  /* transform: translateZ(40px) scale(0.9); */
+  perspective: 1000px;
+  backface-visibility: hidden;
+  box-shadow: inset 0px 0px 90px 4px #dddddd;
+}
+.back {
+  z-index: 0;
+  transform-style: preserve-3d;
+  transform: rotateY(180deg);
+  perspective: 1000px;
+  box-shadow: inset 0px 0px 90px 4px #dddddd;
+}
+.card-parent:hover .card-container {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+.content {
+  transform: translateZ(50px) scale(0.8);
+}
+
+/*Drag image not allowed */
+.not-drag {
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
