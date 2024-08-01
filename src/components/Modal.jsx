@@ -24,7 +24,7 @@ export default function Modal() {
       setLoading(true);
       setError("");
       const response = await fetch(
-        `http://192.168.11.106:3001/carbon?url=${encodeURIComponent(
+        `${import.meta.env.VITE_SERVER_API}/carbon?url=${encodeURIComponent(
           inputValue
         )}`,
         {
