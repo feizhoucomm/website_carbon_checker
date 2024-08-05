@@ -34,6 +34,8 @@ export default function Modal() {
         }
       );
       const result = await response.json();
+console.log("============RESULTS =========================")
+      console.table({result})
       if (result.error) {
         setError(`Error: ${result.error.message}`);
         setData(null);
