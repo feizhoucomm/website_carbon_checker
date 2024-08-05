@@ -27,11 +27,12 @@ export default function Modal() {
         `https://website-carbon-checker-back.vercel.app/carbon?url=${encodeURIComponent(
           inputValue
         )}`,
-        {
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }
+{
+  mode: 'cors',
+  headers: {
+    'Access-Control-Allow-Origin':'*'
+  }
+}
       );
       const result = await response.json();
 console.log("============RESULTS =========================")
