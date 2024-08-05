@@ -24,7 +24,7 @@ export default function Modal() {
       setLoading(true);
       setError("");
       const response = await fetch(
-        `${import.meta.env.VITE_SERVER_API}/carbon?url=${encodeURIComponent(
+        `https://website-carbon-checker-back.vercel.app/carbon?url=${encodeURIComponent(
           inputValue
         )}`,
         {
