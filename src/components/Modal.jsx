@@ -28,7 +28,7 @@ export default function Modal() {
           inputValue
         )}`,
 {
-  mode: 'cors',
+  mode: 'no-cors',
   headers: {
     'Access-Control-Allow-Origin':'*'
   }
