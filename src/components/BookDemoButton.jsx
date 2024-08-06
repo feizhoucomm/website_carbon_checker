@@ -19,16 +19,8 @@ const BookDemoButton = () => {
 
   const onSubmit = async (event) => {
     event.preventDefault();
-    console.log("====================================");
-    console.log({ access_key: import.meta.env.VITE_WEB3FORMS_ACCESS_KEY });
-    console.log("====================================");
     // setResult("Sending....");
     const formData = new FormData(event.target);
-    console.log("\n\n\n==================event.target==================");
-    console.log(event.target);
-    console.log("\n\n\n=============formData=======================");
-    console.log(formData);
-    console.log("====================================");
     formData.append("access_key", import.meta.env.VITE_WEB3FORMS_ACCESS_KEY);
     let body = Object.fromEntries(formData);
     body = JSON.stringify(body);
@@ -49,7 +41,6 @@ const BookDemoButton = () => {
       setResult("Form Submitted Successfully");
       event.target.reset();
     } else {
-      console.log("Error", data);
       setResult(data.message);
     }
   };

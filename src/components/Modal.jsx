@@ -43,21 +43,14 @@ export default function Modal() {
       if (result.error) {
         setError(`Error: ${result.error.message}`);
         setData(null);
-        console.log(
-          "============Error msg =============== : ",
-          result.error.message
-        );
       } else {
         setData(result);
-        console.log("============ Result =============== : ");
-        console.log(result);
       }
       setLoading(false);
     } catch (error) {
       setError(`Error: ${error.message}`);
       setData(null);
       setLoading(false);
-      console.log("============ Catch error =============== : ", error.message);
     }
   };
 

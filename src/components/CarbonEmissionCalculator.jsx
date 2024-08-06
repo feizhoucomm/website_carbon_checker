@@ -11,9 +11,6 @@ const CarbonEmissionCalculator = () => {
     setError("");
 
     try {
-      console.log('====================================');
-      console.log(import.meta.env.VITE_WEB3FORMS_ACCESS_KEY);
-      console.log('====================================');
       const response = await fetch(
         `${
           import.meta.env.VITE_WEB3FORMS_ACCESS_KEY
@@ -25,9 +22,6 @@ const CarbonEmissionCalculator = () => {
         }
       );
       const data = await response.json();
-      console.log("======================data=======================");
-      console.log(data);
-
       if (data.error) {
         setError(`Error: ${data.error.message}`);
       } else {
