@@ -1,7 +1,4 @@
-import React, { useState } from "react";
-import axios from "axios";
 import feizhouCom from "../assets/feizhouCom.png";
-import ResultModal from "./ResultModal";
 import Modal from "./Modal";
 
 const HeroSection = () => {

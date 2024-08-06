@@ -90,7 +90,7 @@ const BookDemoButton = () => {
               setError(null);
               setResult(null);
             }}
-            color={"red"}
+            color={result ? "green" : error ? "red" : ""}
             className="w-full"
           >
             {result ? result : error ? error : ""}

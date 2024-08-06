@@ -1,6 +1,5 @@
 import React from "react";
 import Hero from "../assets/hero.png";
-import BookDemoButton from "./BookDemoButton";
 const AboutSection = () => {
   return (
     <section
