@@ -15,7 +15,7 @@ const FeizouComConsists = () => {
       <div className="logo w-fit h-fit bg-red-5000">
         <img
           src={LogoSolo}
-          alt="Feizoucom Logo"
+          alt="Eco-Friendly Web Design Solutions"
           className="max-w-[12rem] md:max-w-[14rem] lg:max-w-[14rem] h-auto not-drag"
         />
       </div>

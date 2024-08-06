@@ -31,7 +31,7 @@ const AboutSection = () => {
       <div className="image w-fit">
         <img
           src={Hero}
-          alt="Feizhoucom"
+          alt="Carbon Emissions Calculator for Websites"
           srcSet=""
           className="rounded-2xl not-drag"
         />
