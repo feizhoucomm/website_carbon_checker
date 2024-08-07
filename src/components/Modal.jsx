@@ -19,7 +19,8 @@ export default function Modal() {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
-  const handleSearch = async () => {
+  const handleSearch = async (e) => {
+    e.preventDefault();
     try {
       setLoading(true);
       setError("");
