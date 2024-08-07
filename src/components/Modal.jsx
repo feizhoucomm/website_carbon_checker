@@ -56,7 +56,8 @@ export default function Modal() {
 
   return (
     <>
-      <div
+      <form
+        onSubmit={handleSearch}
         id="inputs"
         className="flex flex-col lg:flex-row mt-8 gap-y-2 w-full px-8 md:px-0 sm:min-w-[45vw] md:w-[35dvw]"
       >
@@ -68,6 +69,7 @@ export default function Modal() {
           onChange={(e) => setInputValue(e.target.value)}
         />
         <button
+          type="submit"
           onClick={() => {
             handleSearch();
             handleOpen();
@@ -76,7 +78,7 @@ export default function Modal() {
         >
           Get your results
         </button>
-      </div>
+      </form>
       <div>
         <Dialog className="p-4" size="xl" open={open} handler={handleOpen}>
           <DialogHeader className="justify-between bg-red-4000 py-0">

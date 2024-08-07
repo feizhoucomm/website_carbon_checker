@@ -15,7 +15,7 @@ function App() {
         <title>
           Calculate Your Website's Carbon Emissions | Eco-Friendly Web Solutions
         </title>
-        <link rel="canonical" href="https://www.feizhoucom.com" />
+        <link rel="canonical" href="https://www.feizhoucom.net" />
         <meta
           name="description"
           content="Discover how your website impacts the environment with our precise carbon emission calculator. Create eco-friendly websites and mobile apps that minimize carbon footprints and achieve green certification."
